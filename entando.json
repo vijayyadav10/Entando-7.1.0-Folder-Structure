@@ -1,0 +1,49 @@
+{
+    "microservices": [],
+    "microfrontends": [
+        {
+            "name": "jeff-mfe",
+            "customElement": "jeff-mfe",
+            "stack": "react",
+            "type": "app-builder",
+            "group": "free",
+            "nav": [
+                {
+                    "label": {
+                        "en": "Content Template",
+                        "it": "Content Template"
+                    },
+                    "target": "app-builder",
+                    "url": "/content-template"
+                }
+            ],
+            "slot": "content",
+            "paths": [
+                "/content-template"
+            ],
+            "apiClaims": [
+                {
+                    "name": "int-api",
+                    "type": "internal",
+                    "serviceName": "my-service"
+                }
+            ]
+        }
+    ],
+    "name": "jeff-bundle",
+    "description": "This is an awesome bundle",
+    "version": "0.0.6",
+    "type": "bundle",
+    "global": {
+        "nav": [
+            {
+                "label": {
+                    "en": "Entando Developers",
+                    "it": "Entando Developers"
+                },
+                "target": "external",
+                "url": "https://developer.entando.com/"
+            }
+        ]
+    }
+}
